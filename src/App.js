@@ -1,7 +1,9 @@
 import React from "react";
 import Filter from "./components/Filter.jsx";
 import Header from "./components/Header.jsx";
-import './App.css'
+import Main from "./components/Main.jsx";
+import "./App.css";
+import ProductDescription from "./components/ProductDescription.jsx";
 
 export default function App() {
     return (
@@ -13,8 +15,12 @@ export default function App() {
                 <section className="left">
                     <Filter />
                 </section>
-                <section className="center"></section>
-                <section className="right"></section>
+                <section className="center">
+                    <Main />
+                </section>
+                <section className="right">
+                    <ProductDescription />
+                </section>
             </main>
         </div>
     );

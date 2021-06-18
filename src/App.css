@@ -4,8 +4,9 @@
     --muted-text-black: rgb(180, 180, 180);
     --white-shade: #f3f3f3;
     --white: #ffffff;
-    --yellow: FFC327;
+    --yellow: #FFC327;
     --red: #FF696A;
+    --muted-red: #FFF0F0;
     --border: 1px solid var(--white-shade);
 
 }
@@ -31,7 +32,6 @@ h1 {
 
 h3 {
     font-size: 1em;
-    letter-spacing: 1px;
 }
 
 main {
@@ -39,13 +39,25 @@ main {
 }
 
 section.left {
-    width: 22%;
+    width: 25%;
     height: 90vh;
     overflow-y: scroll;
+}
 
+section.center {
+    width: 50%;
+}
+
+section.right {
+    width: 25%;
+    /* background-color: red; */
 }
 
 section.left::-webkit-scrollbar {
     width: 2px;
     background-color: var(--white-shade);
+}
+
+img {
+    object-fit: contain;
 }

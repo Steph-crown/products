@@ -1,0 +1,8 @@
+div.product-details {
+    margin-top: 1.5em;
+}
+div.product-details img {
+    height: 200px;
+    display: block;
+    margin: auto;
+}

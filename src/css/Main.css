@@ -1,0 +1,76 @@
+::placeholder {
+    color: var(--muted-text-black);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--muted-text-black);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--muted-text-black);
+  }
+
+div.main {
+    padding: calc(0.03 *100vw);
+    width: 100%;
+}
+div.main label {
+    display: flex;
+    background-color: var(--white-shade);
+    border-radius: 16px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.9em 1.6em;
+    min-height: 1px;
+    align-items: center;
+}
+
+div.main .fa-search {
+    display: block;
+    color: var(--muted-text-black);
+    -webkit-text-stroke: 1px var(--white-shade);
+    font-size: 1.4em;
+    width: 5%;
+}
+
+div.main input {
+    width: 95%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    font-size: 1.1em;
+    color: var(--muted-text-black);
+    letter-spacing: 0.8px;
+}
+
+div.main label p {
+    font-weight: 200;
+    color: var(--muted-text-black);
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+div.main>p {
+    margin: 1.6em 0;
+    color: var(--muted-text-black);
+    font-size: 1.05em;
+    letter-spacing: 1.1px;
+    font-weight: 300;
+}
+
+div.main>p b {
+    color: var(--black);
+    font-weight: 800;
+}
+
+section.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 1px;
+    align-items: center;
+}

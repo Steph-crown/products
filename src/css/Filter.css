@@ -47,7 +47,7 @@ div.left-md button {
     outline: none;
     color: var(--white-shade);
     border: none;
-    padding: 8px;
+    padding: 10px;
     font-size: 1em;
     cursor: pointer;
 }

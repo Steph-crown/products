@@ -1,0 +1,56 @@
+div.product {
+    position: relative;
+    border-radius: 12px;
+    padding: 1em;
+    border: var(--border);
+    width: 240px;
+}
+
+div.product img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+div.product .abs {
+    color: var(--red);
+    position: absolute;
+    right: 1.4em;
+    top: 1.4em;
+    font-size: 0.8em;
+    background-color: var(--muted-red);
+    padding: 0.7em;
+    border-radius: 8px;
+}
+
+div.product h2 {
+    font-size: 1.1em;
+    color: var(--black);
+    margin-top: 0.8em;
+}
+
+div.prices {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 2px;
+    align-items: center;
+    margin-top: 1.4em;
+}
+
+div.prices p {
+    color: var(--muted-text-black);
+}
+div.prices h4 {
+    color: var(--black);
+    font-weight: 800;
+}
+
+div.prices button {
+    background-color: var(--theme-green);
+    border-radius: 8px;
+    border: none;
+    padding: 0.7em 1em;
+    color: var(--white-shade);
+    cursor: pointer;
+}
