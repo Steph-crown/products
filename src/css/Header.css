@@ -1,6 +1,6 @@
 div.header {
     width: 100%;
-    padding: 0em calc(0.1 * 100vw);
+    padding: 0em calc(0.05 * 100vw);
 
 }
 
@@ -12,7 +12,9 @@ div.header nav {
 
 div.header,
 div.header nav,
-div.header .right-header, div.logo {
+div.header .right-header,
+div.logo,
+.flex {
     display: flex;
     min-height: 2px;
     align-items: center;

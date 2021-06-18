@@ -9,6 +9,7 @@
     --border: 1px solid var(--white-shade);
 
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -16,7 +17,8 @@
     font-family: 'Nunito Sans';
 }
 
-body {
+body,
+.body, main {
     background-color: var(--white);
     width: 100%;
 }
@@ -25,4 +27,25 @@ h1 {
     font-size: 1em;
     font-weight: 900;
     letter-spacing: 1.3px;
+}
+
+h3 {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+main {
+    display: flex;
+}
+
+section.left {
+    width: 22%;
+    height: 90vh;
+    overflow-y: scroll;
+
+}
+
+section.left::-webkit-scrollbar {
+    width: 2px;
+    background-color: var(--white-shade);
 }

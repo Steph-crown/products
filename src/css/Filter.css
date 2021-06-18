@@ -1,0 +1,53 @@
+div.left-md section {
+    border-bottom: var(--border);
+    padding: 2em calc(0.05* 100vw);
+}
+
+div.left-md section:first-child {
+    padding: 1em calc(0.05 * 100vw);
+}
+
+div.flex {
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+div.flex label {
+    width: 60%;
+    display: flex;
+    min-height: 2px;
+    align-items: center;
+}
+
+div.flex p {
+    padding: 8px 16px;
+    border-radius: 11px;
+    background-color: var(--white-shade);
+    color: var(--muted-text-black);
+}
+
+label input[type=number] {
+    width: 100%;
+    outline: none;
+    border: var(--border);
+    border-radius: 11px;
+    background: transparent;
+    margin-left: 0.5em;
+    padding: 8px 12px;
+    font-family: 'Nunito Sans';
+    color:  var(--black);
+    font-size: 0.9em;
+}
+
+div.left-md button {
+    width: 100%;
+    background-color: var(--theme-green);
+    margin-top: 2em;
+    border-radius: 11px;
+    outline: none;
+    color: var(--white-shade);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}

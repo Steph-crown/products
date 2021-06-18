@@ -5,7 +5,7 @@ import './App.css'
 
 export default function App() {
     return (
-        <div>
+        <div className="body">
             <header>
                 <Header />
             </header>
