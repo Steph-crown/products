@@ -38,7 +38,7 @@ main {
     display: flex;
 }
 
-section.left {
+section.left, section.right {
     width: 25%;
     height: 90vh;
     overflow-y: scroll;
@@ -46,14 +46,11 @@ section.left {
 
 section.center {
     width: 50%;
+    border-right: var(--border);
 }
 
-section.right {
-    width: 25%;
-    /* background-color: red; */
-}
 
-section.left::-webkit-scrollbar {
+section.left::-webkit-scrollbar, section.right::-webkit-scrollbar {
     width: 2px;
     background-color: var(--white-shade);
 }

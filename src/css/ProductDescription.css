@@ -2,7 +2,56 @@ div.product-details {
     margin-top: 1.5em;
 }
 div.product-details img {
-    height: 200px;
+    height: 300px;
     display: block;
     margin: auto;
+    max-width: 100%;
+}
+div.product-details h1 {
+    font-size: 1.6em;
+    color: var(--black);
+    font-weight: 700;
+    margin-top: 1em;
+    letter-spacing: -0px;
+}
+
+div.product-details .details {
+    padding: 0 calc(0.03 * 100vw);
+}
+
+div.product-details p {
+    color: var(--muted-text-black);
+    line-height: 160%;
+    margin-top: 1em;
+}
+
+div.product-details b {
+    color: var(--theme-green);
+    font-weight: 700;
+    cursor: pointer;
+}
+div.button-group {
+    display: flex;
+    min-height: 2px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+
+div.button-group button {
+    padding: 0.7em 1em;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--muted-red);
+}
+
+div.button-group .fa-heart {
+    color: var(--red);
+}
+
+div.button-group button:nth-child(2) {
+    background-color: var(--theme-green);
+    color: var(--white-shade);
+    font-family: 'Nunito Sans';
 }
