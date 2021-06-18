@@ -4,7 +4,6 @@ import Cart from "./../assets/cart.svg";
 import Avatar from "./../assets/avatar.png";
 import "./../css/Header.css";
 
-
 export default function Header() {
     return (
         <div className="header">
