@@ -9,7 +9,7 @@ div.left-md section:first-child {
 
 div.flex {
     width: 100%;
-    margin-top: 1.5em;
+    margin-top: 1.2em;
 }
 
 div.flex label {
@@ -42,7 +42,7 @@ label input[type=number] {
 div.left-md button {
     width: 100%;
     background-color: var(--theme-green);
-    margin-top: 2em;
+    margin-top: 1.2em;
     border-radius: 11px;
     outline: none;
     color: var(--white-shade);
@@ -50,4 +50,10 @@ div.left-md button {
     padding: 10px;
     font-size: 1em;
     cursor: pointer;
+}
+
+div.star-comp {
+    display: flex;
+    min-height: 2px;
+    align-items: center;
 }

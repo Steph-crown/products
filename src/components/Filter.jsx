@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./../css/Filter.css";
+import CheckBox from "./CheckBox";
+import StarRating from "./../components/StarRating.jsx";
 
 export default function Filter() {
     useEffect(() => {
@@ -15,7 +17,6 @@ export default function Filter() {
                     <h3>Filter</h3>
                 </section>
 
-
                 <section>
                     <h3>Price Range</h3>
                     <div className="flex">
@@ -30,8 +31,15 @@ export default function Filter() {
                 <section>
                     <h3>Rating</h3>
                     <div className="flex">
-                        <input type="checkbox" name="" id="" />
-                        <div className="star-comp">above</div>
+                        <CheckBox />
+                        <div className="star-comp ">
+                            <StarRating
+                                rating={3}
+                                changeRating={(rating) => {
+                                    console.log(rating);
+                                }}
+                            />
+                        </div>
                     </div>
                 </section>
             </div>

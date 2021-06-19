@@ -39,18 +39,30 @@ main {
 }
 
 section.left, section.right {
-    width: 25%;
-    height: 90vh;
+    width: 20%;
+    height: 100vh;
+    /* padding-bottom: 2EM; */
+}
+
+section.right {
+    overflow-y: scroll;
+}
+
+section.left {
     overflow-y: scroll;
 }
 
 section.center {
-    width: 50%;
+    width: 60%;
     border-right: var(--border);
+    height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 2EM;
+
 }
 
 
-section.left::-webkit-scrollbar, section.right::-webkit-scrollbar {
+section.left::-webkit-scrollbar, section.right::-webkit-scrollbar , section.center::-webkit-scrollbar {
     width: 2px;
     background-color: var(--white-shade);
 }
