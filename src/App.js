@@ -9,7 +9,7 @@ export default function App(props) {
     const [products, setProducts] = useState([]);
     useEffect(() => {
         // Fetches products from api
-        fetch("http://localhost:5000/products")
+        fetch("https://agile-lowlands-53275.herokuapp.com/products")
             .then((response) => response.json())
             .then(({ data }) => {
                 setProducts(data);
@@ -23,7 +23,7 @@ export default function App(props) {
             <header>
                 <Header />
             </header>
-            {products ? (
+            {products && products.length !== 0 ? (
                 <main>
                     <section className="left">
                         <Filter />

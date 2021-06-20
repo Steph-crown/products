@@ -1,0 +1,39 @@
+div.pagination .circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+div.pagination .circle:hover {
+    background-color: var(--white-shade);
+}
+
+div.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    min-height: 2px;
+    align-items: center;
+}
+
+div.pagination i.arrow {
+    color: var(--yellow);
+    font-size: 1.4em;
+}
+
+div.pagination div.dots {
+    display: flex;
+    margin: 0 1em;
+}
+
+div.pagination i.false {
+    color: var(--muted-text-black);
+}
+
+div.pagination div.selected {
+    background-color: var(--yellow);
+}

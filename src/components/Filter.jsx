@@ -1,14 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./../css/Filter.css";
 import CheckBox from "./CheckBox";
 import StarRating from "./../components/StarRating.jsx";
 
 export default function Filter() {
+    const [categories, setCategories] = useState([]);
+
     useEffect(() => {
-        console.log("eff");
-        return () => {
-            console.log("pop");
-        };
+        // Fetches categories from api
+        fetch("https://agile-lowlands-53275.herokuapp.com/categories")
+            .then((response) => response.json())
+            .then(({ data }) => {
+                setCategories(data);
+            });
+        return () => {};
     }, []);
     return (
         <React.Fragment>
@@ -17,31 +22,13 @@ export default function Filter() {
                     <h3>Filter</h3>
                 </section>
 
-                <section>
-                    <h3>Price Range</h3>
-                    <div className="flex">
-                        <p className="muted">Min</p>
-                        <label className="input-field">
-                            $<input type="number" />
-                        </label>
-                    </div>
-                    <button>Set Price</button>
-                </section>
-
-                <section>
-                    <h3>Rating</h3>
-                    <div className="flex">
-                        <CheckBox />
-                        <div className="star-comp ">
-                            <StarRating
-                                rating={3}
-                                changeRating={(rating) => {
-                                    console.log(rating);
-                                }}
-                            />
-                        </div>
-                    </div>
-                </section>
+                {categories && categories.length !== 0
+                    ? categories.map(x => 
+                          <div>
+                              <CheckBox /> <p>{x.name}</p>
+                          </div>
+                      )
+                    : "Loading Categories"}
             </div>
             <div className="filter-sm"></div>
         </React.Fragment>

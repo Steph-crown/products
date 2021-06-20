@@ -63,8 +63,13 @@ section.center {
 
 
 section.left::-webkit-scrollbar, section.right::-webkit-scrollbar , section.center::-webkit-scrollbar {
-    width: 2px;
+    width: 5px;
     background-color: var(--white-shade);
+}
+
+section.center::-webkit-scrollbar-thumb {
+    background-color: var(--theme-green);
+
 }
 
 img {

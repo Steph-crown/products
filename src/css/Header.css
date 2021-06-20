@@ -60,3 +60,38 @@ div.header h1 {
     color: var(--black);
     margin-left: 1em;
 }
+
+div.menu-bars {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    div.header nav {
+        display: none;
+    }
+    div.header div.right-header {
+        display: none;
+    }
+    div.header div.menu-bars {
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        justify-content: center;
+        align-items: flex-end;
+        height: 90px;
+        cursor: pointer;
+    }
+    div.menu-bars div {
+        height: 2px;
+        background-color: var(--black);
+        width: 30px;
+        margin: 0.2em 0;
+    }
+
+    div.menu-bars div:first-child {
+        width: 15px;
+    }
+    div.menu-bars div:nth-child(2) {
+        width: 22px;
+    }
+}
