@@ -48,10 +48,29 @@ div.prices h4 {
 }
 
 div.prices button {
-    background-color: var(--theme-green);
+    background-color: transparent;
     border-radius: 8px;
-    border: none;
+    border: 2px solid var(--white-shade);
     padding: 0.7em 1em;
+    color: var(--black);
+    cursor: pointer;Al
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+div.prices button:hover {
+    background-color: var(--theme-green);
     color: var(--white-shade);
-    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    div.product {
+        width: 200px;
+    }
+}
+
+@media (max-width: 490px) {
+    div.product {
+        width: 100%;
+    }
 }

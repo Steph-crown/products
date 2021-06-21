@@ -21,7 +21,7 @@ div.main label {
     border-radius: 16px;
     width: 100%;
     justify-content: space-between;
-    padding: 0.9em 1.6em;
+    padding: 0.4em 1.6em;
     min-height: 1px;
     align-items: center;
 }
@@ -31,17 +31,17 @@ div.main .fa-search {
     color: var(--muted-text-black);
     -webkit-text-stroke: 1px var(--white-shade);
     font-size: 1.4em;
-    width: 5%;
+    width: 10%;
 }
 
 div.main input {
-    width: 95%;
+    width: 90%;
     border: none;
     outline: none;
     background-color: transparent;
     font-family: 'Nunito Sans';
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 0.8em;
     color: var(--muted-text-black);
     letter-spacing: 0.8px;
 }

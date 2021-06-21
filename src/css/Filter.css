@@ -57,3 +57,14 @@ div.star-comp {
     min-height: 2px;
     align-items: center;
 }
+
+div.left-md .category, div.left-md>h3 {
+    padding: 0.5em calc(0.05 * 100vw);
+}
+
+div.left-md .category p {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--black);
+    margin-left: 2em;
+}

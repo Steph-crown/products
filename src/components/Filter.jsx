@@ -21,10 +21,10 @@ export default function Filter() {
                 <section>
                     <h3>Filter</h3>
                 </section>
-
+                <h3>Categories</h3>
                 {categories && categories.length !== 0
                     ? categories.map(x => 
-                          <div>
+                          <div className="category">
                               <CheckBox /> <p>{x.name}</p>
                           </div>
                       )

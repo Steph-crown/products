@@ -75,3 +75,24 @@ section.center::-webkit-scrollbar-thumb {
 img {
     object-fit: contain;
 }
+
+@media (max-width: 1000px) {
+    section.right {
+        display: none;
+    }
+    section.left {
+        width: 25%;
+    }
+    section.center {
+        width: 75%;
+    }
+}
+
+@media (max-width: 700px) {
+    section.left {
+        display: none;
+    }
+    section.center {
+        width: 100%;
+    }
+}
