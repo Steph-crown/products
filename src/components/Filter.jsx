@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./../css/Filter.css";
 import CheckBox from "./CheckBox";
-import StarRating from "./../components/StarRating.jsx";
 
 export default function Filter() {
     const [categories, setCategories] = useState([]);
