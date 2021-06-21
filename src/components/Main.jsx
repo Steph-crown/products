@@ -26,6 +26,7 @@ export default function Main(props) {
 
     const handleSearchInput = (e) => {
         setSearchTerm(searchTerm);
+        updateProducts("")
     }
 
     return (
